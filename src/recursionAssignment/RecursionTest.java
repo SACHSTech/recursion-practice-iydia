@@ -40,6 +40,20 @@ public class RecursionTest{
       assertEquals(0, Recursion.count7(-1));
     }
 
+    @Test
+    public void countHiTest1(){
+      assertEquals(1, Recursion.countHi("xxhixx"));
+    }
+
+    @Test
+    public void countHiTest2(){
+      assertEquals(2, Recursion.countHi("xhixhix"));
+    }
+
+    @Test
+    public void countHiTest3(){
+      assertEquals(1, Recursion.countHi("hi"));
+    }
 
     @Test
     public void changePi_Test1(){
@@ -58,6 +72,11 @@ public class RecursionTest{
     @Test
     public void changePi_Test4(){
       assertEquals("nothing", Recursion.changePi("nothing"));
+    }
+
+    @Test
+    public void changePi_Test5(){
+      assertEquals("x3.14xxx", Recursion.changePi("xpixxx"));
     }
 
     @Test
