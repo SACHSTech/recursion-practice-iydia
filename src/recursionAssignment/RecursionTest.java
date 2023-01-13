@@ -40,6 +40,20 @@ public class RecursionTest{
       assertEquals(0, Recursion.count7(-1));
     }
 
+    @Test
+    public void countHiTest1(){
+      assertEquals(1, Recursion.countHi("xxhixx"));
+    }
+
+    @Test
+    public void countHiTest2(){
+      assertEquals(2, Recursion.countHi("xhixhix"));
+    }
+
+    @Test
+    public void countHiTest3(){
+      assertEquals(1, Recursion.countHi("hi"));
+    }
 
     @Test
     public void changePi_Test1(){
@@ -58,6 +72,11 @@ public class RecursionTest{
     @Test
     public void changePi_Test4(){
       assertEquals("nothing", Recursion.changePi("nothing"));
+    }
+
+    @Test
+    public void changePi_Test5(){
+      assertEquals("x3.14xxx", Recursion.changePi("xpixxx"));
     }
 
     @Test
@@ -109,18 +128,18 @@ public class RecursionTest{
 
     @Test
     public void strCopy_Test1(){
-      assertEquals(true, Recursion.strCopy("catcowcat", "cat", 2));
+      assertEquals(true, Recursion.strCopies("catcowcat", "cat", 2));
     }
 
     @Test
     public void strCopy_Test2(){
-      assertEquals(false, Recursion.strCopy("catcowcat", "cow", 2));
+      assertEquals(false, Recursion.strCopies("catcowcat", "cow", 2));
     }
 
 
     @Test
     public void strCopy_Test3(){
-      assertEquals(true, Recursion.strCopy("catcowcat", "cow", 1));
+      assertEquals(true, Recursion.strCopies("catcowcat", "cow", 1));
     }
 
      
