@@ -1,6 +1,7 @@
 package recursionAssignment;
 
 public class Recursion{
+
     // problem set ONE
     public static int count7(int n){
         // base case: negative
@@ -45,6 +46,31 @@ public class Recursion{
             return str.charAt(0) + "*" + pairStar(str.substring(1, str.length()));
         } else {
             return str.charAt(0) + pairStar(str.substring(1, str.length()));
+        }
+    }
+
+    // problem set THREE
+    public static String stringClean(String str){
+        // base case: string is less than 2
+        if(str.length()<2){
+            return str;
+        } else if(str.charAt(0) == str.charAt(1)){
+            return stringClean(str.substring(1, str.length()));
+        } else{
+            return str.charAt(0) + stringClean(str.substring(1, str.length()));
+        }
+    }
+
+    public static boolean strCopies(String str, String sub, int n){
+        // base case
+        if(n<sub.length()){
+            return false;
+        } else {
+            if(str.substring(0, sub.length()).equals(sub)){
+                return strCopies(str.substring(1, str.length()), sub, n-1);
+            } else {
+                return strCopies(str.substring(1, str.length()), sub, n);
+            }
         }
     }
 }

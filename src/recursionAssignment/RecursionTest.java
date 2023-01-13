@@ -128,18 +128,18 @@ public class RecursionTest{
 
     @Test
     public void strCopy_Test1(){
-      assertEquals(true, Recursion.strCopy("catcowcat", "cat", 2));
+      assertEquals(true, Recursion.strCopies("catcowcat", "cat", 2));
     }
 
     @Test
     public void strCopy_Test2(){
-      assertEquals(false, Recursion.strCopy("catcowcat", "cow", 2));
+      assertEquals(false, Recursion.strCopies("catcowcat", "cow", 2));
     }
 
 
     @Test
     public void strCopy_Test3(){
-      assertEquals(true, Recursion.strCopy("catcowcat", "cow", 1));
+      assertEquals(true, Recursion.strCopies("catcowcat", "cow", 1));
     }
 
      
